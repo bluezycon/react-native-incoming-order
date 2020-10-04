@@ -108,17 +108,6 @@ public class UnlockScreenActivity extends AppCompatActivity implements UnlockScr
                 }
             }
         });
-
-        AnimateImage rejectCallBtn = findViewById(R.id.ivDeclineCall);
-        rejectCallBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                v.cancel();
-                player.stop();
-                dismissDialing();
-            }
-        });
-
     }
 
     @Override
